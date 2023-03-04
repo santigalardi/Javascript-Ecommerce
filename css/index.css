@@ -1,0 +1,21 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #cc4c11;
+  background: linear-gradient(to right, #1d1d1d, #3d2770);
+}
+
+.bg-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

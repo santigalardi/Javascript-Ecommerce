@@ -1,0 +1,65 @@
+[
+  {
+     "id":1,
+     "nombre":"AKG C414",
+     "precio":1999,
+     "cantidad":1,
+     "img":"414.jpg"
+  },
+  {
+     "id":2,
+     "nombre":"Neumann U87",
+     "precio":4499,
+     "cantidad":1,
+     "img":"u87.jpg"
+  },
+  {
+     "id":3,
+     "nombre":"Neumann TLM 103",
+     "precio":1799,
+     "cantidad":1,
+     "img":"tlm.jpg"
+  },
+  {
+     "id":4,
+     "nombre":"Shure SM58",
+     "precio":179,
+     "cantidad":1,
+     "img":"sm58.jpg"
+  },
+  {
+     "id":5,
+     "nombre":"Rode NT1",
+     "precio":499,
+     "cantidad":1,
+     "img":"nt1.jpg"
+  },
+  {
+     "id":6,
+     "nombre":"Shure Ksm44a",
+     "precio":1899,
+     "cantidad":1,
+     "img":"shure.jpg"
+  },
+  {
+     "id":7,
+     "nombre":"AT2020",
+     "precio":199,
+     "cantidad":1,
+     "img":"at2020.jpg"
+  },
+  {
+     "id":8,
+     "nombre":"Shure SM57",
+     "precio":159,
+     "cantidad":1,
+     "img":"sm57.jpg"
+  },
+  {
+     "id":9,
+     "nombre":"Shure SM7b",
+     "precio":699,
+     "cantidad":1,
+     "img":"sm7b.jpg"
+  }
+]
