@@ -20,7 +20,12 @@ const contenedor = document.querySelector('.container-items'),
   vaciarCarrito = document.querySelector('#vaciar-carrito'),
   valorTotal = document.querySelector('.total-pagar'),
   countProducts = document.querySelector('#contador-productos'),
-  procesarCompra = document.querySelector('#procesar-compra');
+  procesarCompra = document.querySelector('#procesar-compra'),
+  refresh = document.querySelector('h1');
+
+refresh.addEventListener('click', () => {
+  location.reload();
+});
 
 btnCart.addEventListener('click', () => {
   containerCartProducts.classList.toggle('hidden-cart');
@@ -88,7 +93,7 @@ const mostrarCarrito = () => {
 
   if (carrito.length == 0) {
     rowProduct.innerHTML = `
-          <p class= "cart-empty">El carrito está vacío</p>
+          <p class= "cart-empty">¡El carrito está vacío!</p>
       `;
   }
 
@@ -127,9 +132,13 @@ function eliminarProducto(id) {
 
 // VACIAR CARRITO
 
-vaciarCarrito.addEventListener('click', () => {
+function emptyCart() {
   carrito.length = [];
   mostrarCarrito();
+}
+
+vaciarCarrito.addEventListener('click', () => {
+  emptyCart();
 });
 
 //PROCESAR COMPRA (BTN COMPRAR)
@@ -154,7 +163,7 @@ procesarCompra.addEventListener('click', async () => {
         text: 'Enviamos la factura y medios de pago a su correo electrónico.',
         icon: 'success',
       });
-      vaciarCarrito();
+      emptyCart();
       localStorage.clear();
     }
   }

@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
-/* @media (min-width: 576px) {
-  .container-cart-products {
-    width: 100%;
-  }
-} */
-
 /* Globales */
 *::after,
 *::before,
@@ -45,6 +39,7 @@ h1 {
   margin-left: 30px;
   font-family: 'Slabo 27px', serif;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .container-icon {
@@ -88,11 +83,16 @@ h1 {
   border-radius: 10px;
 }
 
+.cart-empty {
+  padding-top: 20px;
+  text-align: center;
+}
+
 .cart-product {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
   border-bottom: 3px solid #520f9141;
 }
 
@@ -153,6 +153,10 @@ h1 {
   justify-content: space-around;
 }
 
+.btn:active {
+  background-color: #3d2770;
+}
+
 .btn-footer {
   width: 30%;
   background-color: #242129;
@@ -164,6 +168,16 @@ h1 {
 
 .hidden-cart {
   display: none;
+}
+
+@media (max-width: 576px) {
+  .container-cart-products {
+    width: 350px;
+  }
+
+  .btn-footer {
+    width: 40%;
+  }
 }
 
 /* FIN HEADER */
@@ -199,11 +213,6 @@ h1 {
 
 .card:hover img {
   transform: scale(1.2);
-}
-
-.cart-empty {
-  padding-top: 20px;
-  text-align: center;
 }
 
 .footer {

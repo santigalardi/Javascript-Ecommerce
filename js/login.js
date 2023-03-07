@@ -20,7 +20,6 @@ const formIngresar = document.querySelector('#login'),
 // Funciones
 
 function inicioSesion(usuarios) {
-  // codigo inicio sesion
   let userNameFound = usuarios.find((usuario) => {
     return usuario.usuario == userInput.value;
   });
