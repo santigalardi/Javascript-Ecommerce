@@ -21,14 +21,23 @@ const formIngresar = document.querySelector('#login'),
 
 function inicioSesion(usuarios) {
   // codigo inicio sesion
-  let userFound = usuarios.find((usuario) => {
-    return usuario.usuario == userInput.value && usuario.pass == passInput.value;
+  let userNameFound = usuarios.find((usuario) => {
+    return usuario.usuario == userInput.value;
   });
-  if (userInput.value == '') {
+
+  let passFound = usuarios.find((usuario) => {
+    return usuario.pass == passInput.value;
+  });
+
+  if (userInput.value === '') {
     document.querySelector('#mensaje').innerText = 'Ingrese su usuario.';
-  } else if (passInput.value == '') {
+  } else if (userNameFound == undefined) {
+    document.querySelector('#mensaje').innerText = 'Usuario no encontrado.';
+  } else if (passInput.value === '') {
     document.querySelector('#mensaje').innerText = 'Ingrese su constraseña.';
-  } else if (userFound) {
+  } else if (passFound == undefined) {
+    document.querySelector('#mensaje').innerText = 'Contraseña incorrecta.';
+  } else if (userNameFound && passFound) {
     window.location.href = './html/products.html';
   } else {
     document.querySelector('#mensaje').innerText = 'Usuario no encontrado.';

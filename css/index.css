@@ -19,3 +19,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.footer {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+
+.footer > p {
+  color: white;
+  font-size: 15px;
+}
