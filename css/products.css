@@ -45,18 +45,27 @@ h1 {
 .container-icon {
   position: relative;
   margin-right: 30px;
+  display: flex;
+}
+
+.icon-logout {
+  margin: 30px;
+  margin-top: 5px;
+  fill: #ffffff;
+}
+
+.container-cart-icon {
+  cursor: pointer;
 }
 
 .count-products {
   position: absolute;
-  top: 55%;
-  right: 0;
-
+  top: 45%;
+  right: 90px; /* Ajusta el valor del margen derecho para posicionar el contador */
   background-color: #ffffff;
   color: #000000;
   width: 25px;
   height: 25px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,10 +75,6 @@ h1 {
 #contador-productos {
   font-size: 12px;
   font: bold;
-}
-
-.container-cart-icon {
-  cursor: pointer;
 }
 
 .container-cart-products {

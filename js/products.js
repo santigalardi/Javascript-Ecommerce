@@ -120,6 +120,14 @@ function agregarProducto(id) {
     carrito.push(item);
   }
   mostrarCarrito();
+
+  Swal.fire({
+    icon: 'success',
+    title: 'Producto añadido al carrito',
+    text: '¡El producto ha sido agregado al carrito exitosamente!',
+    timer: 2000, // Tiempo en milisegundos que se mostrará el Sweet Alert
+    showConfirmButton: false,
+  });
 }
 
 // ELIMINAR ITEM DE CARRITO
